@@ -7,7 +7,7 @@ def turn_count(board)
   board.each do |idx|
     # count = board.count("X") + board.count("O")
     if board[idx] != " " || board[idx] != ""
-      counting = board.count
+      counting += 1
     end
     counter += 1
   end
