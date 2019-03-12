@@ -1,30 +1,30 @@
 # occupied odd = X
 # occupied even = O
 #
-def turn_count(board)
-  counter = 0
-  count = 0
-  board.each do |idx|
-    count = board.count("X") + board.count("O")
-    count.to_i
-  
-    counter += 1
-  end
-  return count
-end
-#
 # def turn_count(board)
 #   counter = 0
-#   turns = 0
+#   count = 0
 #   board.each do |idx|
-#     # count = board.count("X") + board.count("O")
-#     if idx != " " || idx != ""
-#       turns += 1
-#     end
+#     count = board.count("X") + board.count("O")
+#     count.to_i
+#   
 #     counter += 1
 #   end
-#   return turns
+#   return count
 # end
+#
+def turn_count(board)
+  counter = 0
+  turns = 0
+  board.each do |idx|
+    # count = board.count("X") + board.count("O")
+    if idx != " " && idx != ""
+      turns += 1
+    end
+    counter += 1
+  end
+  return turns
+end
 
 def current_player(board, turn_count)
   if turn_count % 2 == 0
