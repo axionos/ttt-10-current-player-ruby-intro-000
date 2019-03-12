@@ -3,7 +3,7 @@
 
 def turn_count(board)
   counter = 0
-  turns = 0
+  count = 0
   board.each do |idx|
     count = board.count("X") + board.count("O")
     count.to_i
