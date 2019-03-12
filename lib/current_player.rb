@@ -29,6 +29,6 @@ def current_player(board, turns)
   if turns % 2 == 0
      board("X")
   elsif turns % 2 == 1
-     "O"
+     board("O")
   end
 end
