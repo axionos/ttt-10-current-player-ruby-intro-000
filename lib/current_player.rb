@@ -3,15 +3,15 @@
 
 def turn_count(board)
   counter = 0
-  counting = 0
+  turns = 0
   board.each do |idx|
     # count = board.count("X") + board.count("O")
     if board[idx] != " " || board[idx] != ""
-      counting += 1
+      turns += 1
     end
     counter += 1
   end
-  return counting
+  return turns
 end
 
 def current_player(board, turns)
