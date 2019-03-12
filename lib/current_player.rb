@@ -11,7 +11,7 @@ def turn_count(board)
     end
     counter += 1
   end
-  return turns
+  return turns.to_i
 end
 
 def current_player(board, turns)
