@@ -7,7 +7,7 @@
 #   board.each do |idx|
 #     count = board.count("X") + board.count("O")
 #     count.to_i
-#   
+#
 #     counter += 1
 #   end
 #   return count
