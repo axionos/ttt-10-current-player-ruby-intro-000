@@ -1,5 +1,5 @@
-# occupied 1 = X
-# occupied 2 = O
+# occupied odd = X
+# occupied even = O
 
 def turn_count(board)
   counter = 0
