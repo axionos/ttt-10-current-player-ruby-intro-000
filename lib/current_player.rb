@@ -3,6 +3,7 @@
 
 def turn_count(board)
   counter = 0
+  counting = 0
   board.each do |idx|
     # count = board.count("X") + board.count("O")
     if board[idx] != " " || board[idx] != ""
