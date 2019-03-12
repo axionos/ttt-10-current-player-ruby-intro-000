@@ -1,19 +1,17 @@
 # occupied odd = X
 # occupied even = O
 #
-# def turn_count(board)
-#   counter = 0
-#   count = 0
-#   board.each do |idx|
-#     count = board.count("X") + board.count("O")
-#     count.to_i
-#     # if board[idx] != " " || board[idx] != ""
-#     #   turns += 1
-#     # end
-#     counter += 1
-#   end
-#   return count
-# end
+def turn_count(board)
+  counter = 0
+  count = 0
+  board.each do |idx|
+    count = board.count("X") + board.count("O")
+    count.to_i
+  
+    counter += 1
+  end
+  return count
+end
 #
 # def turn_count(board)
 #   counter = 0
